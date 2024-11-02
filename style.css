@@ -1,0 +1,252 @@
+/* Minimalis Reset CSS */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+    
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+    
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Resizing Icon and Image */
+svg {
+    width: 1rem;
+}
+
+img {
+    width: 4rem;
+}
+
+/* Give grid to display */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: #1a91d4;
+    color: white;
+    fill: white;
+    padding: 20px;
+}
+
+#ul-one {
+    margin-top: 2.5rem;
+}
+
+#ul-two {
+    margin-top: 4rem;
+}
+
+ul>li {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+li>svg {
+    margin-right: 10px;
+    width: 1.4rem;
+}
+
+.sidebar>h1 {
+    font-weight:600;
+}
+
+.sidebar>h1>svg {
+    width: 2rem;
+}
+
+.right-container {
+    /* background-color: rgba(255, 0, 0, 0.423); */
+}
+
+
+/* Header Section */
+.header {
+    display: grid;
+    grid-template-rows: auto auto;
+    /* background-color: aquamarine; */
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.225);
+    margin-bottom: 5px;
+}
+
+.top-header {
+    display: flex;
+    height: 40px;
+    /* background-color: bisque; */
+    margin: 10px;
+
+    align-items: center;
+}
+
+.top-header>.search {
+    margin-right: auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search .ic {
+    width: 2rem;
+}
+
+input[type="search"] {
+    width: 30rem;
+    border: none;
+    border-radius: 3rem;
+    height: 2rem;
+    background-color: rgb(243, 243, 243);
+    margin-left: 1rem;
+}
+
+.top-header img {
+    height: auto;
+    width: 40px;
+    margin: 0 0.7rem;
+}
+
+.top-header svg {
+    width: 1.5rem;
+}
+
+.second-header {
+    display: flex;
+    height: 100px;
+    font-size: 0.7rem;
+    /* background-color: rgba(102, 51, 153, 0.488); */
+
+    align-items: center;
+}
+
+.second-header>img {
+    height: auto;
+    width: 100px;
+    margin: 0 2rem;
+}
+
+.second-header button {
+    border: none;
+    background-color: #1a91d4;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 1rem;
+    margin: 0 0.4rem;
+    color: white;
+    font-weight: 500;
+}
+
+.group-button {
+    margin-left: auto;
+}
+
+/* Main Content Section */
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #e1e8f0;
+}
+
+.main-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+
+.card {
+    margin-left: 1.5rem;
+}
+
+.card-2 {
+    margin: 0 1.5rem;
+}
+
+.card-inside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card-box {
+    background-color: white;
+    padding: 2rem 1.8rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-friends {
+    display: flex;
+}
+
+.trending-box {
+    margin-top: 1.5rem;
+}
+
+.card-box>h1 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card-box>p {
+    color: rgb(176, 176, 176);
+    font-weight: 200;
+}
+
+.box-list {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.box-friends {
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.my-icons {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.my-icons>svg {
+    width: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.box-friends {
+    padding: 1rem;
+}
+
+.card-friends {
+    margin-bottom: 1.5rem;
+}
+
+.card-box,
+.box-list,
+.box-friends {
+    background-color: white;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.156);
+}
+
