@@ -43,7 +43,7 @@ img {
     background-color: #1a91d4;
     color: white;
     fill: white;
-    padding: 20px;
+    padding: 1.5rem 2.5rem;
 }
 
 #ul-one {
@@ -73,10 +73,6 @@ li>svg {
     width: 2rem;
 }
 
-.right-container {
-    /* background-color: rgba(255, 0, 0, 0.423); */
-}
-
 
 /* Header Section */
 .header {
@@ -84,7 +80,7 @@ li>svg {
     grid-template-rows: auto auto;
     /* background-color: aquamarine; */
     background-color: white;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.225);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.377);
     margin-bottom: 5px;
 }
 
@@ -120,9 +116,10 @@ input[type="search"] {
 }
 
 .top-header img {
-    height: auto;
+    height: 40px;
     width: 40px;
     margin: 0 0.7rem;
+    border-radius: 50%;
 }
 
 .top-header svg {
@@ -138,11 +135,12 @@ input[type="search"] {
     align-items: center;
 }
 
-.second-header>img {
-    height: auto;
-    width: 100px;
+.my-img>img {
     margin: 0 2rem;
-}
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+} 
 
 .second-header button {
     border: none;
@@ -170,6 +168,7 @@ input[type="search"] {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     margin-top: 2.5rem;
+    font-weight: 700;
 }
 
 .card {
@@ -193,14 +192,17 @@ input[type="search"] {
 
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card-friends {
     display: flex;
+    align-items: center;
 }
 
 .trending-box {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .card-box>h1 {
@@ -211,11 +213,12 @@ input[type="search"] {
 .card-box>p {
     color: rgb(176, 176, 176);
     font-weight: 200;
+    margin-bottom: 1.5rem;
 }
 
 .box-list {
     background-color: white;
-    padding: 1.5rem;
+    padding: 2.5rem;
     border-radius: 0.5rem;
 }
 
@@ -243,6 +246,10 @@ input[type="search"] {
     margin-bottom: 1.5rem;
 }
 
+#last-friends {
+    margin-bottom: 0.8rem;
+}
+
 .card-box,
 .box-list,
 .box-friends {
@@ -250,3 +257,40 @@ input[type="search"] {
     box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.156);
 }
 
+.line-deco {
+    position: absolute;
+    background-color: #f0b52b;
+    top: 0;
+    left: 0;
+    width: 0.7rem;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.card-list>p:nth-child(2) {
+    /* text-overflow: ellipsis;
+    overflow: hidden; */
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.devider {
+    content: "";
+    display: block;
+    border-top: 0.5px solid #8787875e;
+    margin: 0 0 25px;
+    width: 100%;
+}
+
+ .card-friends>img {
+    border-radius: 50%;
+    margin-right: 1.5rem;
+ }
+
+ 
